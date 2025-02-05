@@ -1,2 +1,0 @@
-# AlenInformatik.github.io
-Portfolio
