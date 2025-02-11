@@ -2,6 +2,7 @@
 @media (max-width: 768px) {
   .element {
     min-width: 100%;
+    box-sizing: border-box;
     
   }
 }
@@ -27,6 +28,7 @@ body {
 body {
   min-width: 100%;
   overflow-x: hidden;
+  box-sizing: border-box;
   
 }
 
