@@ -2,7 +2,7 @@
 @media (max-width: 768px) {
   .element {
     width: 80%;
-    font-size: 12px;
+    font-size: 7px;
   }
 }
 *,
@@ -23,12 +23,9 @@ body {
 
 /* Für z.b Handy, damit nichts abgeschnitten wird*/
 
-* {
-   hyphens: auto;
-}
 
 body {
-  width: 100%;
+  width: 70%;
   overflow-x: hidden;
 }
 
