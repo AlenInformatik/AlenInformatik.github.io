@@ -73,9 +73,12 @@ body {
     flex: 1; /* Statt 3, damit es sich besser anpasst */
     margin: 0 1px; /* Weniger Rand für mehr Platz */
     flex-wrap: wrap;
-     p {
     font-size: 3vw; /* Skaliert die Schrift auf kleinen Bildschirmen */
-  }
+  white-space: nowrap; /* Verhindert Zeilenumbrüche */
+  overflow: hidden; /* Verhindert Scrollbalken */
+  text-overflow: ellipsis; /* Fügt „...“ hinzu, falls Text abgeschnitten wird */
+  max-width: 100%; /* Stellt sicher, dass nichts über den Bildschirm hinausgeht */
+
   }
 }
 
