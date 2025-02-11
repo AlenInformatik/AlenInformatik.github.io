@@ -59,7 +59,8 @@ body {
 @media (max-width: 768px) {
   .col-3 {
     flex: 1; /* Statt 3, damit es sich besser anpasst */
-    margin: 0 5px; /* Weniger Rand für mehr Platz */
+    margin: 0 1px; /* Weniger Rand für mehr Platz */
+    flex-wrap: wrap;
   }
 }
 
