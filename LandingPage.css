@@ -24,8 +24,7 @@ body {
 /* Für z.b Handy, damit nichts abgeschnitten wird*/
 
 * {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+   hyphens: auto;
 }
 
 body {
