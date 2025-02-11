@@ -3,6 +3,9 @@
   .element {
     min-width: 100%;
     box-sizing: border-box;
+    p {
+    font-size: 3vw; /* Skaliert die Schrift auf kleinen Bildschirmen */
+  }
     
   }
 }
@@ -29,6 +32,9 @@ body {
   min-width: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
+   p {
+    font-size: 3vw; /* Skaliert die Schrift auf kleinen Bildschirmen */
+  }
   
 }
 
