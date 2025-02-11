@@ -73,6 +73,9 @@ body {
     flex: 1; /* Statt 3, damit es sich besser anpasst */
     margin: 0 1px; /* Weniger Rand für mehr Platz */
     flex-wrap: wrap;
+     p {
+    font-size: 3vw; /* Skaliert die Schrift auf kleinen Bildschirmen */
+  }
   }
 }
 
