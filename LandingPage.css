@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
 @media (max-width: 768px) {
   .element {
-    max-width: 100%;
+    min-width: 100%;
     
   }
 }
@@ -25,7 +25,7 @@ body {
 
 
 body {
-  max-width: 100%;
+  min-width: 100%;
   overflow-x: hidden;
   
 }
