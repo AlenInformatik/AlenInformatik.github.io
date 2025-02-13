@@ -1,17 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
 @media (max-width: 768px) {
   .element {
-    width: 110%;
+    width: 140%;
     font-size: 12px;
     box-sizing: border-box;
   
   }
   body {
-    width: 110%;
+    width: 140%;
     overflow-x: hidden;
-      display: grid;
-     
-      height: 100vh;
+      
       box-sizing: border-box;
   
     
