@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="Projekt_Minigame.css">
+</head>
+<body>
+    <div class="menu" id="menu">
+        <div class="menu-item" data-mode="1vs1">1vs1</div>
+        <div class="menu-item" data-mode="cpu">vs CPU</div>
+        <div class="menu-item" data-mode="Zeit">Zeit: AUS</div>
+        <div class="menu-item" data-mode="play-music">Spiel Musik</div>
+        <div class="empty-cell"></div>
+        <div class="empty-cell"></div>
+        <div class="empty-cell"></div>
+        <div class="empty-cell"></div>
+        <div class="empty-cell"></div>
+    </div>
+    <div class="menu" id="difficultyMenu" style="display: none;">
+        <div class="menu-item" data-difficulty="Einfach">Einfach</div>
+        <div class="menu-item" data-difficulty="Mittel">Mittel</div>
+        <div class="menu-item" data-difficulty="Schwer">Schwer</div>
+        <div class="menu-item" data-difficulty="Zurück">Zurück</div>
+        <div class="empty-cell"></div>
+        <div class="empty-cell"></div>
+        <div class="empty-cell"></div>
+        <div class="empty-cell"></div>
+        <div class="empty-cell"></div>
+    </div>
+    <div class="game-board" id="gameBoard" style="display: none;">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+    <div class="message" id="message" style="display: none;">
+        <span id="resultMessage"></span>
+        <div class="actions">
+            <button data-action="nächste-runde">Nächste Runde</button>
+            <button data-action="neustart">Neustart</button>
+            <button data-action="hauptmenü">Hauptmenü</button>
+        </div>
+    </div>
+    <div class="menu-message" id="menuMessage">Von Alen Alicajic</div>
+    <div class="score" id="score">Score: 0 - 0</div>
+    <div class="Zeit" id="Zeit" style="display: none;">Zeit: 60s</div>
+    <audio id="backgroundMusic" src="KARDO x 3ROBI - LIFE FAST MA3LICH (Instrumental)  Prod. Diamond Ai Beats.mp3" loop></audio>
+    <audio id="menuMusic" src="KARDO x 3ROBI - LIFE FAST MA3LICH (Instrumental)  Prod. Diamond Ai Beats.mp3" loop></audio>
+    <audio id="clickSound" src="https://audio.jukehost.co.uk/i1yLuouLlsAGZADXca1l9cLofZYSFEJB" preload="auto"></audio>
+    <audio id="winSound" src="https://audio.jukehost.co.uk/ctBAuE7V4BElkiW9e7kxyv0xaNLudCjr" preload="auto"></audio>
+    <audio id="drawSound" src="https://audio.jukehost.co.uk/EfjAWQIneqWA5TRPXjjtsgF5coxXJa8x" preload="auto"></audio>
+    <audio id="loseSound" src="https://audio.jukehost.co.uk/NSI7I9dFsHZqLKg6sDYvnNG410vXnSoc" preload="auto"></audio>
+    <audio id="menuClickSound" src="https://audio.jukehost.co.uk/8IBLgaxE6A7kj5nTdizK3dPX4zEqUXFC" preload="auto"></audio>
+    <audio id="victorySound" src="https://audio.jukehost.co.uk/ctBAuE7V4BElkiW9e7kxyv0xaNLudCjr" preload="auto"></audio>
+    <script src="Projekt_Minigame.js"></script>
+</body>
+</html>
