@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    height: 100%; /* Sicherstellen, dass der Body die volle Höhe hat */
+    display: flex;
+    justify-content: center; /* Horizontal zentrieren */
+    align-items: center; /* Vertikal zentrieren */
+  }
+  
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  #homeView {
+    width: auto;
+    -webkit-animation: fadeInUp 2s;
+    animation: fadeInUp 2s;
+  }
+  
+  .layout-homepage {
+    height: 100%; /* Höhe auf 100% setzen */
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-perspective: 500px;
+    -moz-perspective: 500px;
+    perspective: 500px;
+    display: flex;
+    justify-content: center; /* Horizontal zentrieren */
+    align-items: center; /* Vertikal zentrieren */
+    width: 100%;
+  }
+  
+  .layout-homepage .slideshow {
+    height: auto;
+  }
+  
+  .layout-homepage .slideshow .item {
+    margin-top: 0; /* Entfernt den zusätzlichen Abstand oben */
+  }
+  
+  .visual {
+    display: block;
+    margin: 0 auto;
+    width: 1015px;
+    height: 504px;
+  }
+  
+  @-webkit-keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(80px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
