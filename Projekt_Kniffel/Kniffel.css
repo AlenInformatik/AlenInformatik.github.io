@@ -1,0 +1,294 @@
+    body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } 
+    canvas{ display: block; vertical-align: bottom; } 
+    #particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: #1E293B;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    pointer-events: auto;
+}
+
+
+    .count-particles{ background: #000022; 
+        position: absolute; 
+        top: 48px; 
+        left: 0; 
+        width: 80px; 
+        color: #13E8E9; 
+        font-size: .8em;
+         text-align: left; 
+         text-indent: 4px; 
+         line-height: 14px; 
+         padding-bottom: 2px;
+          font-family: Helvetica, Arial, sans-serif;
+           font-weight: bold; } 
+    .js-count-particles{ font-size: 1.1em; }
+     #stats, 
+    .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } 
+    #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } 
+    .count-{ border-radius: 0 0 3px 3px; }
+    
+#current-player {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.player-name {
+  font-size: 16px;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.player-name.current-player {
+  color: green;
+  font-weight: bold;
+  font-size: 22px;
+  transform: scale(1.1);
+}
+
+    
+    :root {
+      --primary-color: #3B82F6;
+      --secondary-color: #2ecc71;
+      --accent-color: #FFD700;
+      --background-color: #1E293B;
+      --text-color: #3B82F6;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  pointer-events: auto;
+
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+      color: var(--primary-color);
+    }
+
+    .tile {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: var(--primary-color);
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+      
+    }
+
+    #button-row {
+  margin-top: 15px;
+  margin-bottom: 15px;
+   padding: 25px 50px;              /* größerer Button */
+  font-size: 25px;                 /* größere Schrift */
+ 
+}
+
+    .btn:hover {
+      background-color: #2980b9;
+      transform: translateY(-2px);
+    }
+
+    .btn:disabled {
+      background-color: #bdc3c7;
+      cursor: not-allowed;
+    }
+
+
+#end-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* optional für vertikale Zentrierung */
+  text-align: center;
+  gap: 15px; /* Abstand zwischen Überschrift, Scores und Button */
+}
+
+
+
+    #dice {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+
+    .die {
+      width: 60px;
+      height: 60px;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      cursor: pointer;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .die:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .die.kept {
+      background-color: var(--secondary-color);
+      color: #ffffff;
+    }
+
+    #scorecard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 10px;
+    }
+
+    #scorecard button {
+      background-color: var(--primary-color);
+      color: #ffffff;
+      border: none;
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    #scorecard button:hover:not(:disabled) {
+      background-color: #2980b9;
+      transform: translateY(-2px);
+    }
+
+    #scorecard button:disabled {
+      background-color: #bdc3c7;
+      cursor: not-allowed;
+    }
+
+    #players {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .player-name {
+      padding: 8px 16px;
+      margin: 5px;
+      background-color: var(--primary-color);
+      color: #ffffff;
+      font-size: 16px;
+      border-radius: 20px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .player-name.current-player {
+      background-color: var(--secondary-color);
+      font-weight: bold;
+      transform: scale(1.05);
+    }
+
+    #add-player-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    #new-player-name {
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid var(--primary-color);
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    #rules-toggle {
+      text-align: center;
+      margin: 20px 0;
+      color: var(--primary-color);
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    #rules-content {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #rules-content h3 {
+      color: var(--primary-color);
+    }
+
+    #final-scores {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 20px;
+  margin-bottom: 20px;
+    }
+
+    .winner {
+      color: var(--accent-color);
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+
+      #scorecard {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      }
+
+      .die {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+      }
+
+      .btn,
+      #scorecard button {
+        font-size: 14px;
+        padding: 8px 16px;
+      }
+    }

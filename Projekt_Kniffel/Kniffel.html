@@ -1,0 +1,72 @@
+<html lang="de">
+
+<head>
+   <link rel="stylesheet" href="Kniffel.css" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kniffel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+</head>
+
+<body>
+
+
+  
+<div id="particles-js"></div>  <span </div> <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script ></script>
+
+  <div class="container">
+    <div id="start-screen" class="tile">
+      <h1><i class="fas fa-dice"></i> Kniffel</h1>
+      <div id="add-player-container">
+        <input type="text" id="new-player-name" placeholder="Spielername...">
+        <button class="btn" id="add-player-btn"><i class="fas fa-user-plus"></i> Hinzufügen</button>
+      </div>
+      <div id="players"></div>
+      <button class="btn" onclick="startGame()" id="start-game-btn" style="display: none;"><i class="fas fa-play"></i> Start</button>
+    </div>
+
+    <div id="game" class="tile" style="display: none; max-width: 400px; margin: auto;">
+  <h1><i class="fas fa-dice"></i> Kniffel</h1>
+  
+  <div id="rules-toggle" onclick="toggleRules()">
+    <i class="fas fa-book"></i> Spielregeln zeigen/verbergen
+  </div>
+  
+  <div id="rules-content" style="display: none;">
+    <h3>Kniffel Regeln:</h3>
+    <ul>
+      <li>Einser bis Sechser: Summe der gewählten Zahlen</li>
+      <li>Dreierpasch: Summe aller Würfel bei 3+ gleichen Zahlen</li>
+      <li>Viererpasch: Summe aller Würfel bei 4+ gleichen Zahlen</li>
+      <li>Full House: 25 Punkte für 3 gleiche und 2 andere gleiche Zahlen</li>
+      <li>Kleine Straße: 30 Punkte für 4 aufeinanderfolgende Zahlen</li>
+      <li>Große Straße: 40 Punkte für 5 aufeinanderfolgende Zahlen</li>
+      <li>Kniffel: 50 Punkte für 5 gleiche Zahlen</li>
+      <li>Chance: Summe aller Würfel</li>
+    </ul>
+  </div>
+  
+  <div id="current-player"></div>
+  <div id="dice"></div>
+  
+  <div id="button-row" style="display: flex; justify-content: space-between; margin-top: 10px;">
+    <button id="rollBtn" class="btn" onclick="rollDice()"><i class="fas fa-dice"></i> Würfel (3)</button>
+    <button id="end-turn-btn" class="btn" onclick="nextTurn()" style="display: none;"><i class="fas fa-user-clock"></i> Nächster</button>
+  </div>
+  
+  <div id="scorecard"></div>
+</div>
+    <div id="end-screen" class="tile" style="display: none;">
+      <h2><i class="fas fa-trophy"></i> Spielende!</h2>
+      <div id="final-scores"></div>
+      <button class="btn" onclick="resetGame()"><i class="fas fa-redo"></i> Neues Spiel</button>
+    </div>
+  </div>
+ 
+  <script src="Kniffel.js" defer></script>
+</body>
+    
+</html>
