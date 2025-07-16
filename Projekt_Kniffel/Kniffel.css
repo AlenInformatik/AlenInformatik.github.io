@@ -402,7 +402,7 @@ html, body {
  #action-buttons {
     flex-direction: row;
     justify-content: center;
-    gap: 25px;
+    gap: 50px;
     margin-top: 10px;
   }
 
