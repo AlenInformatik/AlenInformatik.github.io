@@ -400,18 +400,18 @@ html, body {
   }
 
   #action-buttons {
-    flex-direction: row;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-  }
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
 
-  #action-buttons button {
-    width: 90px;
-    height: 50px;
-    font-size: 16px;
-    margin-top: 0;
-  }
+#action-buttons button {
+  width: 45%;
+  max-width: 140px;
+  height: 45px;
+  font-size: 14px;
+  margin: 0;
+}
 
   #scorecard {
     flex-direction: column;
