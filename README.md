@@ -1,6 +1,6 @@
 # Portfolio – Alen Alicajic
 
-Persönliches Portfolio von **Alen Alicajic**, angehender Fachinformatiker für
+Persönliches Portfolio von **Alen Alicajic**, ausgelernter Fachinformatiker für
 Systemintegration. Die Seite stellt meine Skills, interaktiven Web-Projekte und
 Kontaktmöglichkeiten vor.
 
