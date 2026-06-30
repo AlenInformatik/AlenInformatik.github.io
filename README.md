@@ -1,16 +1,16 @@
-# Portfolio – Alen Alicajic
+# Portfolio - Alen Alicajic
 
-Persönliches Portfolio von mir, als ausgelernter Fachinformatiker für
+Persönliches Portfolio von **Alen Alicajic**, ausgelernter Fachinformatiker für
 Systemintegration. Die Seite stellt meine Skills, interaktiven Web-Projekte und
 Kontaktmöglichkeiten vor.
 
-🔗 **Live:** https://aleninformatik.github.io
+**Live:** https://aleninformatik.github.io
 
 ## Projekte
 
 | Projekt | Beschreibung |
 |---------|--------------|
-| **Handy / Portfolio** | Interaktives Smartphone, komplett aus Code – ohne Vorlagen oder Bilder. |
+| **Handy / Portfolio** | Interaktives Smartphone, komplett aus Code - ohne Vorlagen oder Bilder. |
 | **Laptop / Portfolio** | Interaktiver Laptop als digitales Portfolio für Dokumente und Unterlagen. |
 | **Tic Tac Toe** | Minigame für zwei Spieler oder gegen die CPU, mit Musik und Timer. |
 | **Kniffel** | Digitale Umsetzung des Würfelspiels Kniffel (Yahtzee). |
