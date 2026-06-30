@@ -282,6 +282,10 @@ section {
   position: absolute;
   top: -120px;
   left: 7%;
+  width: 230px;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 6px;
   transform: rotateZ(-6deg);
   z-index: -1;
 }
